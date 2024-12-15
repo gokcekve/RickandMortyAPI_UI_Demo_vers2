@@ -1,0 +1,201 @@
+body, html{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0px;
+}
+
+.container-overlay {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 90%;
+    margin: 0 auto;
+    color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.table-container {
+    margin-top: 20px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    color: #000;
+}
+
+.background-container {
+    background: url('https://rickandmortyapi.com/api/character/avatar/1.jpeg') no-repeat center center/cover;
+    min-height: 100vh;
+    padding: 20px;
+    color: #fff;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input, select {
+    padding: 10px;
+    width: 100%;
+}
+
+.sort-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+table img {
+    border-radius: 5px;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* En alt sayfalama navbar alanı*/
+#pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#prev-page, #next-page {
+    padding: 10px;
+    cursor: pointer;
+    margin: 0 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#prev-page:disabled, #next-page:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.message-box {
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hata mesajı */
+.message-box.error {
+    background-color: #f44336;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.message-box.success {
+    background-color: #4CAF50; /* Yeşil */
+    border: 2px solid #388E3C;
+}
+
+/* Karakter detay mesaj kutusu */
+.message-box.warning {
+    background-color: #ffcc00; /* Sarı arka plan */
+    border: 2px solid #ff9800;
+    color: #333;
+    padding: 15px;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Filtreleme formu */
+.filter-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.filter-form div {
+    margin: 10px;
+}
+
+.filter-form input,
+.filter-form select,
+.filter-form button,
+.filter-form .btn-reset {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.filter-form button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.filter-form .btn-reset {
+    background-color: #f44336;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
